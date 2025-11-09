@@ -13,6 +13,14 @@ export const Header = () => {
           
           <nav className="flex gap-2 md:gap-4">
             <Link
+              to="/visualizacao-sugestoes"
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-muted text-foreground hover:opacity-90 transition-opacity text-sm md:text-base border border-border"
+            >
+              <FileText className="h-4 w-4" />
+              <span className="hidden sm:inline">Visualizar Sugestões</span>
+              <span className="sm:hidden">Visualizar</span>
+            </Link>
+            <Link
               to="/cadastro-problema"
               className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:opacity-90 transition-opacity text-sm md:text-base"
             >

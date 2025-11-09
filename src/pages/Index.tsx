@@ -28,6 +28,18 @@ const Index = () => {
               Plataforma que conecta sugestões públicas com soluções acadêmicas, 
               facilitando a colaboração entre universidades e gestão pública.
             </p>
+            {/* Botão WhatsApp */}
+            <div className="flex justify-center mt-8">
+              <a
+                href="https://wa.me/556392014881"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-green-500 text-white font-semibold shadow hover:bg-green-600 transition-colors text-lg"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#fff" d="M12 2C6.477 2 2 6.477 2 12c0 1.93.547 3.73 1.5 5.25L2 22l4.92-1.47A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2Zm0 18c-1.61 0-3.13-.488-4.4-1.33l-.31-.2-2.92.87.87-2.84-.2-.32A7.963 7.963 0 0 1 4 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8Zm4.29-5.71c-.25-.13-1.47-.73-1.7-.81-.23-.08-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.37-.78-1.88-.2-.48-.41-.41-.57-.42-.15-.01-.32-.01-.5-.01-.17 0-.45.06-.68.29-.23.23-.9.88-.9 2.14 0 1.26.92 2.48 1.05 2.65.13.17 1.81 2.77 4.39 3.77.61.21 1.09.33 1.46.42.61.15 1.16.13 1.6.08.49-.06 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+                Fale conosco no WhatsApp
+              </a>
+            </div>
           </div>
         </section>
 
