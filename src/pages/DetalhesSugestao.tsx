@@ -179,9 +179,6 @@ const DetalhesSugestao = () => {
                 <Badge variant="outline" className="text-sm">
                   {categoria.categoria}
                 </Badge>
-                <Badge className={getStatusColor(sugestao.status)}>
-                  {sugestao.status}
-                </Badge>
               </div>
               <h1 className="text-3xl font-bold text-foreground mb-3">
                 {sugestao.titulo}
@@ -217,13 +214,7 @@ const DetalhesSugestao = () => {
                 <p className="font-semibold text-primary">{sugestao.ocorrencias}</p>
               </div>
             </div>
-            <div className="flex items-center gap-2">
-              <AlertCircle className="h-5 w-5 text-muted-foreground" />
-              <div>
-                <p className="text-xs text-muted-foreground">Nível de Impacto</p>
-                <p className="font-semibold text-orange-600">{sugestao.impacto}/10</p>
-              </div>
-            </div>
+            {/* Nível de Impacto removido */}
           </div>
         </Card>
 
