@@ -323,6 +323,44 @@ const DetalhesSugestao = () => {
           </div>
         </Card>
 
+        {/* Sugestões para Editais */}
+        <Card className="p-6 mb-6">
+          <div className="flex items-center gap-2 mb-6">
+            <FileText className="h-5 w-5 text-primary" />
+            <h2 className="text-xl font-bold text-foreground">
+              Sugestões para Editais
+            </h2>
+          </div>
+          <div className="space-y-4">
+            {sugestoesData.sugestoesEditais
+              .filter((edital) => edital.categoria === categoria.categoria)
+              .map((edital, idx) => (
+                <Card key={idx} className="p-4 bg-muted/30 hover:bg-muted/50 transition-colors">
+                  <div className="flex flex-col gap-2">
+                    <div className="flex flex-wrap gap-2 items-center mb-1">
+                      <Badge variant="outline" className="text-xs">
+                        {edital.tipo}
+                      </Badge>
+                      <span className="text-xs text-muted-foreground font-semibold">
+                        Cluster: {edital.cluster}
+                      </span>
+                    </div>
+                    <p className="text-foreground font-bold mb-1">
+                      {edital.titulo}
+                    </p>
+                    <p className="text-muted-foreground text-sm">
+                      {edital.descricao}
+                    </p>
+                  </div>
+                </Card>
+              ))}
+            {/* Caso não haja sugestões para edital */}
+            {sugestoesData.sugestoesEditais.filter((edital) => edital.categoria === categoria.categoria).length === 0 && (
+              <p className="text-muted-foreground text-sm">Nenhuma sugestão de edital para esta categoria.</p>
+            )}
+          </div>
+        </Card>
+
         {/* Registros Brutos */}
         <Card className="p-6">
           <div className="flex items-center gap-2 mb-6">

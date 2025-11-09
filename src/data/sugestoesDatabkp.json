@@ -20,53 +20,41 @@
       "sugestoes": [
         {
           "id": 101,
-          "titulo": "Problemas de escoamento e alagamento na Rua das Flores",
+          "titulo": "Pavimentação da Rua das Flores",
           "bairro": "Centro",
           "dataRegistro": "2024-11-01",
           "status": "Em Andamento",
           "impacto": 9,
           "ocorrencias": 45,
-          "descricao": "Necessidade urgente de soluções para drenagem e escoamento de águas pluviais na Rua das Flores, devido a alagamentos frequentes e acúmulo de água após chuvas intensas.",
+          "descricao": "Necessidade urgente de pavimentação da Rua das Flores devido ao alto tráfego e condições precárias do asfalto.",
           "registrosBrutos": [
             {
               "id": 1001,
               "data": "2024-11-01",
               "cidadao": "João Silva",
-              "descricao": "Após chuva forte, a rua ficou alagada e a água demorou horas para escoar.",
+              "descricao": "Buraco grande na rua das flores, próximo ao número 150",
               "localizacao": "Rua das Flores, 150"
             },
             {
               "id": 1002,
               "data": "2024-10-28",
               "cidadao": "Maria Santos",
-              "descricao": "Água parada na rua causa transtornos e dificulta passagem de pedestres e veículos.",
+              "descricao": "Asfalto completamente destruído, impossível passar",
               "localizacao": "Rua das Flores, 200"
             },
             {
               "id": 1003,
               "data": "2024-10-25",
               "cidadao": "Pedro Costa",
-              "descricao": "Bueiros entupidos e falta de drenagem eficiente provocam alagamentos recorrentes.",
+              "descricao": "Chuva agravou situação da rua, carros atolando",
               "localizacao": "Rua das Flores, 180"
             }
           ],
           "analiseTemporalMensal": [
-            {
-              "mes": "2024-08",
-              "quantidade": 5
-            },
-            {
-              "mes": "2024-09",
-              "quantidade": 12
-            },
-            {
-              "mes": "2024-10",
-              "quantidade": 18
-            },
-            {
-              "mes": "2024-11",
-              "quantidade": 10
-            }
+            { "mes": "2024-08", "quantidade": 5 },
+            { "mes": "2024-09", "quantidade": 12 },
+            { "mes": "2024-10", "quantidade": 18 },
+            { "mes": "2024-11", "quantidade": 10 }
           ]
         },
         {
@@ -95,22 +83,10 @@
             }
           ],
           "analiseTemporalMensal": [
-            {
-              "mes": "2024-07",
-              "quantidade": 3
-            },
-            {
-              "mes": "2024-08",
-              "quantidade": 7
-            },
-            {
-              "mes": "2024-09",
-              "quantidade": 11
-            },
-            {
-              "mes": "2024-10",
-              "quantidade": 11
-            }
+            { "mes": "2024-07", "quantidade": 3 },
+            { "mes": "2024-08", "quantidade": 7 },
+            { "mes": "2024-09", "quantidade": 11 },
+            { "mes": "2024-10", "quantidade": 11 }
           ]
         },
         {
@@ -139,22 +115,10 @@
             }
           ],
           "analiseTemporalMensal": [
-            {
-              "mes": "2024-06",
-              "quantidade": 4
-            },
-            {
-              "mes": "2024-07",
-              "quantidade": 6
-            },
-            {
-              "mes": "2024-08",
-              "quantidade": 9
-            },
-            {
-              "mes": "2024-09",
-              "quantidade": 9
-            }
+            { "mes": "2024-06", "quantidade": 4 },
+            { "mes": "2024-07", "quantidade": 6 },
+            { "mes": "2024-08", "quantidade": 9 },
+            { "mes": "2024-09", "quantidade": 9 }
           ]
         }
       ]
@@ -202,22 +166,10 @@
             }
           ],
           "analiseTemporalMensal": [
-            {
-              "mes": "2024-08",
-              "quantidade": 12
-            },
-            {
-              "mes": "2024-09",
-              "quantidade": 18
-            },
-            {
-              "mes": "2024-10",
-              "quantidade": 22
-            },
-            {
-              "mes": "2024-11",
-              "quantidade": 15
-            }
+            { "mes": "2024-08", "quantidade": 12 },
+            { "mes": "2024-09", "quantidade": 18 },
+            { "mes": "2024-10", "quantidade": 22 },
+            { "mes": "2024-11", "quantidade": 15 }
           ]
         },
         {
@@ -246,22 +198,10 @@
             }
           ],
           "analiseTemporalMensal": [
-            {
-              "mes": "2024-08",
-              "quantidade": 10
-            },
-            {
-              "mes": "2024-09",
-              "quantidade": 15
-            },
-            {
-              "mes": "2024-10",
-              "quantidade": 20
-            },
-            {
-              "mes": "2024-11",
-              "quantidade": 8
-            }
+            { "mes": "2024-08", "quantidade": 10 },
+            { "mes": "2024-09", "quantidade": 15 },
+            { "mes": "2024-10", "quantidade": 20 },
+            { "mes": "2024-11", "quantidade": 8 }
           ]
         }
       ]
@@ -302,22 +242,10 @@
             }
           ],
           "analiseTemporalMensal": [
-            {
-              "mes": "2024-07",
-              "quantidade": 8
-            },
-            {
-              "mes": "2024-08",
-              "quantidade": 11
-            },
-            {
-              "mes": "2024-09",
-              "quantidade": 12
-            },
-            {
-              "mes": "2024-10",
-              "quantidade": 10
-            }
+            { "mes": "2024-07", "quantidade": 8 },
+            { "mes": "2024-08", "quantidade": 11 },
+            { "mes": "2024-09", "quantidade": 12 },
+            { "mes": "2024-10", "quantidade": 10 }
           ]
         },
         {
@@ -346,22 +274,10 @@
             }
           ],
           "analiseTemporalMensal": [
-            {
-              "mes": "2024-06",
-              "quantidade": 7
-            },
-            {
-              "mes": "2024-07",
-              "quantidade": 9
-            },
-            {
-              "mes": "2024-08",
-              "quantidade": 11
-            },
-            {
-              "mes": "2024-09",
-              "quantidade": 11
-            }
+            { "mes": "2024-06", "quantidade": 7 },
+            { "mes": "2024-07", "quantidade": 9 },
+            { "mes": "2024-08", "quantidade": 11 },
+            { "mes": "2024-09", "quantidade": 11 }
           ]
         }
       ]
@@ -402,22 +318,10 @@
             }
           ],
           "analiseTemporalMensal": [
-            {
-              "mes": "2024-08",
-              "quantidade": 5
-            },
-            {
-              "mes": "2024-09",
-              "quantidade": 8
-            },
-            {
-              "mes": "2024-10",
-              "quantidade": 11
-            },
-            {
-              "mes": "2024-11",
-              "quantidade": 5
-            }
+            { "mes": "2024-08", "quantidade": 5 },
+            { "mes": "2024-09", "quantidade": 8 },
+            { "mes": "2024-10", "quantidade": 11 },
+            { "mes": "2024-11", "quantidade": 5 }
           ]
         }
       ]
@@ -458,97 +362,13 @@
             }
           ],
           "analiseTemporalMensal": [
-            {
-              "mes": "2024-07",
-              "quantidade": 4
-            },
-            {
-              "mes": "2024-08",
-              "quantidade": 5
-            },
-            {
-              "mes": "2024-09",
-              "quantidade": 7
-            },
-            {
-              "mes": "2024-10",
-              "quantidade": 6
-            }
+            { "mes": "2024-07", "quantidade": 4 },
+            { "mes": "2024-08", "quantidade": 5 },
+            { "mes": "2024-09", "quantidade": 7 },
+            { "mes": "2024-10", "quantidade": 6 }
           ]
         }
       ]
-    }
-  ],
-  "sugestoesEditais": [
-    {
-      "cluster": "Chuvas e alagamentos",
-      "categoria": "Infraestrutura",
-      "tipo": "Pesquisa",
-      "titulo": "Jardins de chuva e bioengenharia",
-      "descricao": "Financiar pesquisas para projetar e avaliar jardins de chuva, biovaletas e outras soluções baseadas na natureza capazes de reduzir alagamentos urbanos."
-    },
-    {
-      "cluster": "Chuvas e alagamentos",
-      "categoria": "Infraestrutura",
-      "tipo": "Inovação",
-      "titulo": "Sensores e modelo preditivo de alagamentos",
-      "descricao": "Apoiar startups e grupos de computação na criação de redes de sensores e modelos preditivos para gerar alertas em tempo real e auxiliar a Defesa Civil."
-    },
-    {
-      "cluster": "Infraestrutura",
-      "categoria": "Infraestrutura",
-      "tipo": "Inovação",
-      "titulo": "Pavimentos permeáveis e material sustentável",
-      "descricao": "Lançar chamada para desenvolver protótipos de pavimentos permeáveis e sustentáveis em vias críticas, permitindo infiltração de água e reduzindo manutenção."
-    },
-    {
-      "cluster": "Infraestrutura",
-      "categoria": "Infraestrutura",
-      "tipo": "Extensão",
-      "titulo": "Oficinas de manutenção de calçadas",
-      "descricao": "Apoiar cursos técnicos para moradores e comerciantes aprenderem a consertar e padronizar calçadas, com foco em acessibilidade e participação da comunidade."
-    },
-    {
-      "cluster": "Saúde",
-      "categoria": "Saúde",
-      "tipo": "Pesquisa/Extensão",
-      "titulo": "Telemedicina para especialidades",
-      "descricao": "Financiar projetos que implantem ou ampliem teleconsultas no posto de saúde do bairro, reduzindo filas de espera para especialistas."
-    },
-    {
-      "cluster": "Saúde",
-      "categoria": "Saúde",
-      "tipo": "Inovação",
-      "titulo": "Gestão inteligente de emergências",
-      "descricao": "Desenvolver sistemas de triagem e priorização no pronto-socorro com apoio de IA e análise de dados para diminuir tempo de espera."
-    },
-    {
-      "cluster": "Educação",
-      "categoria": "Educação",
-      "tipo": "Pesquisa/Obras",
-      "titulo": "Escola saudável e sustentável",
-      "descricao": "Incentivar projetos de reforma em escolas municipais que integrem eficiência energética, ventilação natural, telhados verdes e espaços de aprendizagem ao ar livre."
-    },
-    {
-      "cluster": "Educação",
-      "categoria": "Educação",
-      "tipo": "Extensão",
-      "titulo": "Vagas em creches e parentalidade",
-      "descricao": "Financiar projetos que criem soluções comunitárias para ampliar o atendimento em creches e promover retorno de pais e mães ao trabalho."
-    },
-    {
-      "cluster": "Transporte",
-      "categoria": "Transporte",
-      "tipo": "Pesquisa/Planejamento",
-      "titulo": "Mobilidade noturna",
-      "descricao": "Seleção de estudos sobre demanda de transporte público no período noturno, com coleta de dados de trajeto e entrevistas com trabalhadores."
-    },
-    {
-      "cluster": "Meio Ambiente",
-      "categoria": "Meio Ambiente",
-      "tipo": "Inovação",
-      "titulo": "Plataforma de coleta seletiva",
-      "descricao": "Desenvolver aplicativo ou plataforma web para agendar coleta seletiva, notificar moradores e registrar irregularidades, combinando educação ambiental."
     }
   ]
 }
