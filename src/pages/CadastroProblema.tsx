@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { toast } from "sonner";
@@ -30,17 +31,49 @@ const problemSchema = z.object({
 type ProblemForm = z.infer<typeof problemSchema>;
 
 const CadastroProblema = () => {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm<ProblemForm>({
+  const { register, handleSubmit, formState: { errors }, reset, getValues } = useForm<ProblemForm>({
     resolver: zodResolver(problemSchema),
   });
 
+  const [previewData, setPreviewData] = useState<ProblemForm | null>(null);
+
   const onSubmit = (data: ProblemForm) => {
-    console.log("Problema cadastrado:", data);
-    toast.success("Problema cadastrado com sucesso!", {
-      description: "O problema foi registrado no sistema.",
+    console.log("Sugestão cadastrada:", data);
+    toast.success("Sugestão cadastrada com sucesso!", {
+      description: "A sugestão foi registrada no sistema.",
     });
     reset();
   };
+
+  const openPreview = () => {
+    const values = getValues();
+    setPreviewData(values as ProblemForm);
+  };
+
+  const confirmPreview = () => {
+    if (previewData) {
+      onSubmit(previewData);
+      setPreviewData(null);
+    }
+  };
+
+  const exampleData: ProblemForm = {
+    titulo: "Falta de iluminação na rua das Flores",
+    descricao: "Ao longo dos últimos meses, moradores reportaram ausência de iluminação pública na Rua das Flores, aumentando insegurança noturna e queda de movimentação comercial.",
+    categoria: "infraestrutura",
+    palavrasChave: "iluminação,segurança,rua das flores",
+    fonte: "ouvidoria",
+    dataRegistro: "2025-11-01",
+    quantidadeOcorrencias: 12,
+    orgaoResponsavel: "Secretaria de Infraestrutura",
+    urlFonte: "",
+    municipio: "Gurupi",
+    bairro: "Centro",
+    nivelImpacto: "medio",
+    situacao: "aberto",
+  };
+
+  const fillExample = () => reset(exampleData);
 
   return (
     <div className="min-h-screen bg-background">
@@ -51,10 +84,10 @@ const CadastroProblema = () => {
           <div className="mb-8">
             <h1 className="text-3xl md:text-4xl font-bold text-foreground flex items-center gap-3 mb-2">
               <FileText className="h-8 w-8 text-primary" />
-              Cadastro de Problema Público
+              Cadastro de Sugestão
             </h1>
             <p className="text-muted-foreground">
-              Registre demandas e necessidades detectadas em fontes públicas para criar uma base estruturada de problemas.
+              Registre demandas e necessidades detectadas em fontes públicas para criar uma base estruturada de sugestões.
             </p>
           </div>
 
@@ -67,7 +100,7 @@ const CadastroProblema = () => {
               </h2>
               <div className="space-y-4">
                 <div>
-                  <Label htmlFor="titulo">Título do Problema *</Label>
+                  <Label htmlFor="titulo">Título da Sugestão *</Label>
                   <Input
                     id="titulo"
                     {...register("titulo")}
@@ -84,7 +117,7 @@ const CadastroProblema = () => {
                   <Textarea
                     id="descricao"
                     {...register("descricao")}
-                    placeholder="Contextualização e impacto do problema..."
+                    placeholder="Contextualização e impacto da sugestão..."
                     rows={5}
                     className="mt-1"
                   />
@@ -297,13 +330,47 @@ const CadastroProblema = () => {
               <Button type="button" variant="outline" onClick={() => reset()}>
                 Limpar Formulário
               </Button>
+              <Button type="button" variant="ghost" onClick={fillExample}>
+                Exemplo
+              </Button>
+              <Button type="button" variant="secondary" onClick={openPreview}>
+                Pré-visualizar
+              </Button>
               <Button type="submit" className="bg-primary hover:opacity-90">
-                Cadastrar Problema
+                Cadastrar Sugestão
               </Button>
             </div>
           </form>
         </div>
       </main>
+
+      {/* Preview Modal */}
+      {previewData && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div className="absolute inset-0 bg-black/40" onClick={() => setPreviewData(null)} />
+          <Card className="z-60 p-6 w-11/12 max-w-2xl mx-auto">
+            <h3 className="text-xl font-semibold mb-4">Pré-visualização da Sugestão</h3>
+            <div className="space-y-2 text-sm text-foreground">
+              <p><strong>Título:</strong> {previewData.titulo}</p>
+              <p><strong>Descrição:</strong> {previewData.descricao}</p>
+              <p><strong>Categoria:</strong> {previewData.categoria}</p>
+              <p><strong>Palavras-chave:</strong> {previewData.palavrasChave}</p>
+              <p><strong>Fonte:</strong> {previewData.fonte}</p>
+              <p><strong>Data:</strong> {previewData.dataRegistro}</p>
+              <p><strong>Ocorrências:</strong> {previewData.quantidadeOcorrencias}</p>
+              <p><strong>Órgão:</strong> {previewData.orgaoResponsavel}</p>
+              <p><strong>Município:</strong> {previewData.municipio} {previewData.bairro ? ` - ${previewData.bairro}` : ''}</p>
+              <p><strong>Nível de Impacto:</strong> {previewData.nivelImpacto}</p>
+              <p><strong>Situação:</strong> {previewData.situacao}</p>
+            </div>
+
+            <div className="flex justify-end gap-3 mt-6">
+              <Button type="button" variant="outline" onClick={() => setPreviewData(null)}>Editar</Button>
+              <Button type="button" className="bg-primary" onClick={confirmPreview}>Confirmar e Enviar</Button>
+            </div>
+          </Card>
+        </div>
+      )}
     </div>
   );
 };

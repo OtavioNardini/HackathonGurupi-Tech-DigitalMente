@@ -15,7 +15,7 @@ const Index = () => {
         <section className="container mx-auto px-4 py-16 md:py-24">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-6">
-              <img src={logoIcon} alt="Digital Mente" className="h-24 md:h-32 animate-in fade-in duration-700" />
+              <img src={logoIcon} alt="Digital Mente" className="h-48 md:h-64 animate-in fade-in duration-700" />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-in slide-in-from-bottom-4 duration-700">
               Conectando mentes,
@@ -25,7 +25,7 @@ const Index = () => {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-in slide-in-from-bottom-5 duration-700 delay-150">
-              Plataforma que conecta problemas públicos com soluções acadêmicas, 
+              Plataforma que conecta sugestões públicas com soluções acadêmicas, 
               facilitando a colaboração entre universidades e gestão pública.
             </p>
           </div>
@@ -33,7 +33,7 @@ const Index = () => {
 
         {/* Cards Section */}
         <section className="container mx-auto px-4 pb-16 md:pb-24">
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 gap-6 w-full max-w-6xl mx-auto">
             {/* Card 1 - Problema Público */}
             <Card className="p-8 shadow-[var(--shadow-medium)] hover:shadow-xl transition-shadow duration-300 border-l-4 border-l-primary">
               <div className="flex items-start gap-4 mb-6">
@@ -42,7 +42,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-2">
-                    Problema Público
+                    Sugestão Pública
                   </h2>
                   <p className="text-muted-foreground">
                     Registre demandas da comunidade
@@ -53,7 +53,7 @@ const Index = () => {
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start gap-2 text-muted-foreground">
                   <ArrowRight className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span>Identifique e documente problemas públicos</span>
+                  <span>Identifique e documente sugestões públicas</span>
                 </li>
                 <li className="flex items-start gap-2 text-muted-foreground">
                   <ArrowRight className="h-5 w-5 text-primary shrink-0 mt-0.5" />
@@ -67,13 +67,13 @@ const Index = () => {
 
               <Link to="/cadastro-problema">
                 <Button className="w-full bg-primary hover:opacity-90 transition-opacity">
-                  Cadastrar Problema
+                  Cadastrar Sugestão
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
             </Card>
 
-            {/* Card 2 - Proposta de Pesquisa */}
+                {/* Card 3 - Editais */}
             <Card className="p-8 shadow-[var(--shadow-medium)] hover:shadow-xl transition-shadow duration-300 border-l-4 border-l-secondary">
               <div className="flex items-start gap-4 mb-6">
                 <div className="p-3 bg-secondary/10 rounded-lg">
@@ -81,10 +81,10 @@ const Index = () => {
                 </div>
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-2">
-                    Proposta de Pesquisa
+                    Editais
                   </h2>
                   <p className="text-muted-foreground">
-                    Conecte pesquisa com soluções reais
+                    Verifique os editais disponíveis
                   </p>
                 </div>
               </div>
@@ -92,21 +92,17 @@ const Index = () => {
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start gap-2 text-muted-foreground">
                   <ArrowRight className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                  <span>Registre projetos de pesquisa aplicada</span>
+                  <span>Verifique os editais disponíveis</span>
                 </li>
                 <li className="flex items-start gap-2 text-muted-foreground">
                   <ArrowRight className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                  <span>Vincule soluções acadêmicas a problemas</span>
-                </li>
-                <li className="flex items-start gap-2 text-muted-foreground">
-                  <ArrowRight className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                  <span>Facilite financiamento e parcerias</span>
+                  <span>Consulte a documentação para mais informações</span>
                 </li>
               </ul>
 
-              <Link to="/proposta-pesquisa">
+              <Link to="/editais">
                 <Button className="w-full bg-secondary hover:opacity-90 transition-opacity">
-                  Cadastrar Proposta
+                  Verifique os Editais
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>

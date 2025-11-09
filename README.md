@@ -4,70 +4,101 @@
 
 **URL**: https://lovable.dev/projects/7be97bfa-38cd-471d-93b2-f27d92600411
 
-## How can I edit this code?
+# HackathonGurupi-Tech-DigitalMente
 
-There are several ways of editing your application.
+Plataforma web para submissão e gestão de propostas de projetos — formulário com validação, pré-visualização e UI acessível, construída com React + TypeScript.
 
-**Use Lovable**
+## Sobre
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7be97bfa-38cd-471d-93b2-f27d92600411) and start prompting.
+Este repositório contém a aplicação web desenvolvida durante o Hackathon Gurupi Tech (projeto "DigitalMente"). A aplicação permite que usuários submetam propostas de projetos com campos obrigatórios (título, resumo, pesquisador responsável, instituição e datas), visualize uma pré-visualização antes do envio e receba feedback via toasts. O projeto usa uma biblioteca de componentes locais e utilitários modernos (Vite, Tailwind, shadcn-ui / Radix).
 
-Changes made via Lovable will be committed automatically to this repo.
+## Funcionalidades
 
-**Use your preferred IDE**
+- Formulário de submissão com validação de schema (Zod + react-hook-form)
+- Pré-visualização dos dados antes da confirmação
+- Componentes de UI reutilizáveis (cards, inputs, botões, labels)
+- Feedback por toast após envio
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Tecnologias
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Baseado no package.json do projeto, as principais tecnologias são:
 
-Follow these steps:
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- react-hook-form
+- Zod
+- Radix UI (componentes @radix-ui)
+- shadcn-ui (estilos/utilitários e componentes locais)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Scripts úteis
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Os scripts disponíveis no `package.json` (use npm):
 
-# Step 3: Install the necessary dependencies.
-npm i
+- `npm run dev` — inicia o servidor de desenvolvimento (Vite)
+- `npm run build` — gera a build de produção
+- `npm run build:dev` — build em modo development
+- `npm run preview` — serve a build gerada localmente
+- `npm run lint` — executa ESLint
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Exemplo de execução (PowerShell/terminal):
+
+```powershell
+# instalar dependências
+npm install
+
+# rodar em desenvolvimento
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Se você usa `pnpm` ou `bun`, substitua os comandos de instalação/execução de acordo.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Estrutura do projeto (resumida)
 
-**Use GitHub Codespaces**
+- `src/components/` — componentes compartilhados e biblioteca de UI
+- `src/pages/` — páginas da aplicação (`Index.tsx`, `PropostaPesquisa.tsx`, etc.)
+- `src/lib/` — utilitários
+- `src/assets/` — imagens e assets
+- `src/main.tsx`, `src/App.tsx` — ponto de entrada e roteamento
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Como rodar localmente
 
-## What technologies are used for this project?
+1. Clone o repositório
+	```sh
+	git clone <URL-DO-REPO>
+	cd HackathonGurupi-Tech-DigitalMente
+	```
 
-This project is built with:
+2. Instale dependências
+	```sh
+	npm install
+	```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. Rode em modo desenvolvimento
+	```sh
+	npm run dev
+	```
 
-## How can I deploy this project?
+4. Abra o navegador (normalmente http://localhost:5173)
 
-Simply open [Lovable](https://lovable.dev/projects/7be97bfa-38cd-471d-93b2-f27d92600411) and click on Share -> Publish.
+## Contribuindo
 
-## Can I connect a custom domain to my Lovable project?
+- Abra uma issue para discutir mudanças ou reportar bugs
+- Crie uma branch: `git checkout -b feat/minha-melhoria`
+- Faça commits pequenos e claros
+- Abra um Pull Request descrevendo a alteração
 
-Yes, you can!
+Se quiser, posso gerar um `CONTRIBUTING.md` e templates de issue/PR.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Licença
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Adicione aqui a licença do projeto (ex.: MIT). Se preferir, posso adicionar um `LICENSE` com MIT.
+
+## Contato
+
+Abra uma issue no repositório para dúvidas ou entre em contato com os mantenedores do projeto.
+
+---
+
+Se quiser que eu também adicione badges, CI (GitHub Actions) ou que adapte o README para `pnpm`/`bun`, me diga qual opção prefere.
