@@ -2,7 +2,7 @@ import { Header } from "@/components/Header";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { FileText, FlaskConical, ArrowRight, Brain } from "lucide-react";
+import { FileText, FlaskConical, ArrowRight, Brain, BarChart3 } from "lucide-react";
 import logoIcon from "@/assets/logo-icon.png";
 
 const Index = () => {
@@ -33,7 +33,7 @@ const Index = () => {
 
         {/* Cards Section */}
         <section className="container mx-auto px-4 pb-16 md:pb-24">
-          <div className="grid grid-cols-2 gap-6 w-full max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl mx-auto">
             {/* Card 1 - Problema Público */}
             <Card className="p-8 shadow-[var(--shadow-medium)] hover:shadow-xl transition-shadow duration-300 border-l-4 border-l-primary">
               <div className="flex items-start gap-4 mb-6">
@@ -68,6 +68,45 @@ const Index = () => {
               <Link to="/cadastro-problema">
                 <Button className="w-full bg-primary hover:opacity-90 transition-opacity">
                   Cadastrar Sugestão
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </Card>
+
+            {/* Card 2 - Visualização de Sugestões */}
+            <Card className="p-8 shadow-[var(--shadow-medium)] hover:shadow-xl transition-shadow duration-300 border-l-4 border-l-purple-500">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="p-3 bg-purple-500/10 rounded-lg">
+                  <BarChart3 className="h-8 w-8 text-purple-600" />
+                </div>
+                <div>
+                  <h2 className="text-2xl font-bold text-foreground mb-2">
+                    Visualização de Sugestões
+                  </h2>
+                  <p className="text-muted-foreground">
+                    Visualize dados e métricas
+                  </p>
+                </div>
+              </div>
+              
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-start gap-2 text-muted-foreground">
+                  <ArrowRight className="h-5 w-5 text-purple-600 shrink-0 mt-0.5" />
+                  <span>Visualize sugestões agrupadas por categoria</span>
+                </li>
+                <li className="flex items-start gap-2 text-muted-foreground">
+                  <ArrowRight className="h-5 w-5 text-purple-600 shrink-0 mt-0.5" />
+                  <span>Analise KPIs e indicadores de desempenho</span>
+                </li>
+                <li className="flex items-start gap-2 text-muted-foreground">
+                  <ArrowRight className="h-5 w-5 text-purple-600 shrink-0 mt-0.5" />
+                  <span>Acompanhe o status e resolução</span>
+                </li>
+              </ul>
+
+              <Link to="/visualizacao-sugestoes">
+                <Button className="w-full bg-purple-600 hover:bg-purple-700 transition-colors">
+                  Ver Visualização
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>

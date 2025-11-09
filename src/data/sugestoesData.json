@@ -1,0 +1,374 @@
+{
+  "estatisticasGerais": {
+    "totalSugestoes": 247,
+    "emAndamento": 89,
+    "resolvidas": 142,
+    "aguardandoAnalise": 16,
+    "taxaResolucao": 57.5,
+    "tempoMedioResolucao": 45
+  },
+  "sugestoesPorCategoria": [
+    {
+      "id": 1,
+      "categoria": "Infraestrutura",
+      "total": 78,
+      "resolvidas": 45,
+      "emAndamento": 28,
+      "aguardando": 5,
+      "prioridade": "Alta",
+      "impactoMedio": 8.5,
+      "sugestoes": [
+        {
+          "id": 101,
+          "titulo": "Pavimentação da Rua das Flores",
+          "bairro": "Centro",
+          "dataRegistro": "2024-11-01",
+          "status": "Em Andamento",
+          "impacto": 9,
+          "ocorrencias": 45,
+          "descricao": "Necessidade urgente de pavimentação da Rua das Flores devido ao alto tráfego e condições precárias do asfalto.",
+          "registrosBrutos": [
+            {
+              "id": 1001,
+              "data": "2024-11-01",
+              "cidadao": "João Silva",
+              "descricao": "Buraco grande na rua das flores, próximo ao número 150",
+              "localizacao": "Rua das Flores, 150"
+            },
+            {
+              "id": 1002,
+              "data": "2024-10-28",
+              "cidadao": "Maria Santos",
+              "descricao": "Asfalto completamente destruído, impossível passar",
+              "localizacao": "Rua das Flores, 200"
+            },
+            {
+              "id": 1003,
+              "data": "2024-10-25",
+              "cidadao": "Pedro Costa",
+              "descricao": "Chuva agravou situação da rua, carros atolando",
+              "localizacao": "Rua das Flores, 180"
+            }
+          ],
+          "analiseTemporalMensal": [
+            { "mes": "2024-08", "quantidade": 5 },
+            { "mes": "2024-09", "quantidade": 12 },
+            { "mes": "2024-10", "quantidade": 18 },
+            { "mes": "2024-11", "quantidade": 10 }
+          ]
+        },
+        {
+          "id": 102,
+          "titulo": "Iluminação pública deficiente na Av. Principal",
+          "bairro": "Jardim América",
+          "dataRegistro": "2024-10-28",
+          "status": "Aguardando Análise",
+          "impacto": 8,
+          "ocorrencias": 32,
+          "descricao": "Falta de iluminação adequada na Av. Principal causando insegurança para moradores e pedestres.",
+          "registrosBrutos": [
+            {
+              "id": 2001,
+              "data": "2024-10-28",
+              "cidadao": "Ana Paula",
+              "descricao": "Postes queimados há meses, área muito escura",
+              "localizacao": "Av. Principal, altura do 500"
+            },
+            {
+              "id": 2002,
+              "data": "2024-10-20",
+              "cidadao": "Carlos Mendes",
+              "descricao": "Insegurança à noite por falta de luz",
+              "localizacao": "Av. Principal, 600"
+            }
+          ],
+          "analiseTemporalMensal": [
+            { "mes": "2024-07", "quantidade": 3 },
+            { "mes": "2024-08", "quantidade": 7 },
+            { "mes": "2024-09", "quantidade": 11 },
+            { "mes": "2024-10", "quantidade": 11 }
+          ]
+        },
+        {
+          "id": 103,
+          "titulo": "Manutenção de calçadas no centro comercial",
+          "bairro": "Centro",
+          "dataRegistro": "2024-10-15",
+          "status": "Resolvido",
+          "impacto": 7,
+          "ocorrencias": 28,
+          "descricao": "Calçadas irregulares e quebradas dificultam o acesso de pedestres e pessoas com mobilidade reduzida.",
+          "registrosBrutos": [
+            {
+              "id": 3001,
+              "data": "2024-10-15",
+              "cidadao": "Fernanda Lima",
+              "descricao": "Calçada quebrada dificulta passagem de cadeirantes",
+              "localizacao": "Rua Central, 100"
+            },
+            {
+              "id": 3002,
+              "data": "2024-10-10",
+              "cidadao": "Roberto Alves",
+              "descricao": "Piso irregular causou queda de idoso",
+              "localizacao": "Rua Central, 120"
+            }
+          ],
+          "analiseTemporalMensal": [
+            { "mes": "2024-06", "quantidade": 4 },
+            { "mes": "2024-07", "quantidade": 6 },
+            { "mes": "2024-08", "quantidade": 9 },
+            { "mes": "2024-09", "quantidade": 9 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "categoria": "Saúde",
+      "total": 64,
+      "resolvidas": 38,
+      "emAndamento": 22,
+      "aguardando": 4,
+      "prioridade": "Muito Alta",
+      "impactoMedio": 9.2,
+      "sugestoes": [
+        {
+          "id": 201,
+          "titulo": "Falta de médicos especialistas no posto de saúde",
+          "bairro": "Waldir Lins",
+          "dataRegistro": "2024-11-05",
+          "status": "Em Andamento",
+          "impacto": 10,
+          "ocorrencias": 67,
+          "descricao": "Carência de médicos especialistas no posto de saúde do bairro, gerando longas filas de espera.",
+          "registrosBrutos": [
+            {
+              "id": 4001,
+              "data": "2024-11-05",
+              "cidadao": "Lucia Rodrigues",
+              "descricao": "Esperei 3 meses por consulta com cardiologista",
+              "localizacao": "Posto de Saúde Waldir Lins"
+            },
+            {
+              "id": 4002,
+              "data": "2024-11-02",
+              "cidadao": "José Carlos",
+              "descricao": "Não há neurologista disponível no posto",
+              "localizacao": "Posto de Saúde Waldir Lins"
+            },
+            {
+              "id": 4003,
+              "data": "2024-10-30",
+              "cidadao": "Marina Costa",
+              "descricao": "Falta de ortopedista para atender urgências",
+              "localizacao": "Posto de Saúde Waldir Lins"
+            }
+          ],
+          "analiseTemporalMensal": [
+            { "mes": "2024-08", "quantidade": 12 },
+            { "mes": "2024-09", "quantidade": 18 },
+            { "mes": "2024-10", "quantidade": 22 },
+            { "mes": "2024-11", "quantidade": 15 }
+          ]
+        },
+        {
+          "id": 202,
+          "titulo": "Demora no atendimento de urgências",
+          "bairro": "Centro",
+          "dataRegistro": "2024-10-30",
+          "status": "Em Andamento",
+          "impacto": 9,
+          "ocorrencias": 53,
+          "descricao": "Tempo de espera excessivo no pronto atendimento, comprometendo a qualidade do serviço.",
+          "registrosBrutos": [
+            {
+              "id": 5001,
+              "data": "2024-10-30",
+              "cidadao": "Paulo Henrique",
+              "descricao": "Esperei 6 horas para ser atendido com dor intensa",
+              "localizacao": "Pronto Socorro Central"
+            },
+            {
+              "id": 5002,
+              "data": "2024-10-28",
+              "cidadao": "Sandra Oliveira",
+              "descricao": "Criança com febre alta aguardou 4 horas",
+              "localizacao": "Pronto Socorro Central"
+            }
+          ],
+          "analiseTemporalMensal": [
+            { "mes": "2024-08", "quantidade": 10 },
+            { "mes": "2024-09", "quantidade": 15 },
+            { "mes": "2024-10", "quantidade": 20 },
+            { "mes": "2024-11", "quantidade": 8 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "categoria": "Educação",
+      "total": 52,
+      "resolvidas": 31,
+      "emAndamento": 18,
+      "aguardando": 3,
+      "prioridade": "Alta",
+      "impactoMedio": 8.8,
+      "sugestoes": [
+        {
+          "id": 301,
+          "titulo": "Reforma de escolas municipais",
+          "bairro": "Vários",
+          "dataRegistro": "2024-10-20",
+          "status": "Em Andamento",
+          "impacto": 9,
+          "ocorrencias": 41,
+          "descricao": "Necessidade de reforma estrutural em várias escolas municipais com problemas de infraestrutura.",
+          "registrosBrutos": [
+            {
+              "id": 6001,
+              "data": "2024-10-20",
+              "cidadao": "Professora Clara",
+              "descricao": "Telhado com goteiras prejudica aulas em dias de chuva",
+              "localizacao": "Escola Municipal João XXIII"
+            },
+            {
+              "id": 6002,
+              "data": "2024-10-15",
+              "cidadao": "Diretor Marcos",
+              "descricao": "Rede elétrica antiga apresenta riscos",
+              "localizacao": "Escola Municipal São José"
+            }
+          ],
+          "analiseTemporalMensal": [
+            { "mes": "2024-07", "quantidade": 8 },
+            { "mes": "2024-08", "quantidade": 11 },
+            { "mes": "2024-09", "quantidade": 12 },
+            { "mes": "2024-10", "quantidade": 10 }
+          ]
+        },
+        {
+          "id": 302,
+          "titulo": "Ampliação de vagas em creches",
+          "bairro": "Jardim Primavera",
+          "dataRegistro": "2024-10-12",
+          "status": "Resolvido",
+          "impacto": 8,
+          "ocorrencias": 38,
+          "descricao": "Demanda por mais vagas em creches municipais para atender a comunidade local.",
+          "registrosBrutos": [
+            {
+              "id": 7001,
+              "data": "2024-10-12",
+              "cidadao": "Juliana Moraes",
+              "descricao": "Fila de espera com mais de 200 crianças",
+              "localizacao": "Creche Municipal Jardim Primavera"
+            },
+            {
+              "id": 7002,
+              "data": "2024-10-08",
+              "cidadao": "Rafael Santos",
+              "descricao": "Impossível voltar ao trabalho sem vaga na creche",
+              "localizacao": "Creche Municipal Jardim Primavera"
+            }
+          ],
+          "analiseTemporalMensal": [
+            { "mes": "2024-06", "quantidade": 7 },
+            { "mes": "2024-07", "quantidade": 9 },
+            { "mes": "2024-08", "quantidade": 11 },
+            { "mes": "2024-09", "quantidade": 11 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "categoria": "Transporte",
+      "total": 35,
+      "resolvidas": 19,
+      "emAndamento": 13,
+      "aguardando": 3,
+      "prioridade": "Média",
+      "impactoMedio": 7.5,
+      "sugestoes": [
+        {
+          "id": 401,
+          "titulo": "Aumento de linhas de ônibus no período noturno",
+          "bairro": "Periferia",
+          "dataRegistro": "2024-11-03",
+          "status": "Aguardando Análise",
+          "impacto": 8,
+          "ocorrencias": 29,
+          "descricao": "Necessidade de mais opções de transporte público durante a noite para trabalhadores do turno noturno.",
+          "registrosBrutos": [
+            {
+              "id": 8001,
+              "data": "2024-11-03",
+              "cidadao": "Alberto Lima",
+              "descricao": "Último ônibus passa às 22h, saio do trabalho às 23h",
+              "localizacao": "Terminal Rodoviário"
+            },
+            {
+              "id": 8002,
+              "data": "2024-11-01",
+              "cidadao": "Carla Souza",
+              "descricao": "Tenho que pagar táxi todos os dias por falta de ônibus",
+              "localizacao": "Bairro Periférico"
+            }
+          ],
+          "analiseTemporalMensal": [
+            { "mes": "2024-08", "quantidade": 5 },
+            { "mes": "2024-09", "quantidade": 8 },
+            { "mes": "2024-10", "quantidade": 11 },
+            { "mes": "2024-11", "quantidade": 5 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "categoria": "Meio Ambiente",
+      "total": 18,
+      "resolvidas": 9,
+      "emAndamento": 8,
+      "aguardando": 1,
+      "prioridade": "Média",
+      "impactoMedio": 7.0,
+      "sugestoes": [
+        {
+          "id": 501,
+          "titulo": "Coleta seletiva irregular",
+          "bairro": "São José",
+          "dataRegistro": "2024-10-25",
+          "status": "Em Andamento",
+          "impacto": 7,
+          "ocorrencias": 22,
+          "descricao": "Irregularidade na coleta seletiva de lixo, causando acúmulo de resíduos recicláveis.",
+          "registrosBrutos": [
+            {
+              "id": 9001,
+              "data": "2024-10-25",
+              "cidadao": "Beatriz Campos",
+              "descricao": "Coleta seletiva não passa há 3 semanas",
+              "localizacao": "Rua das Acácias"
+            },
+            {
+              "id": 9002,
+              "data": "2024-10-22",
+              "cidadao": "Eduardo Pinto",
+              "descricao": "Lixo reciclável acumulando nas calçadas",
+              "localizacao": "Av. dos Ipês"
+            }
+          ],
+          "analiseTemporalMensal": [
+            { "mes": "2024-07", "quantidade": 4 },
+            { "mes": "2024-08", "quantidade": 5 },
+            { "mes": "2024-09", "quantidade": 7 },
+            { "mes": "2024-10", "quantidade": 6 }
+          ]
+        }
+      ]
+    }
+  ]
+}
