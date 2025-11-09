@@ -1,8 +1,6 @@
-# Welcome to your Lovable project
+# Welcome to Hackathon Gurupi project
 
 ## Project info
-
-**URL**: https://lovable.dev/projects/7be97bfa-38cd-471d-93b2-f27d92600411
 
 # HackathonGurupi-Tech-DigitalMente
 
